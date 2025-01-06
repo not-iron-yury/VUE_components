@@ -27,12 +27,15 @@ defineProps({
 <style lang="scss" scoped>
 .sidebar {
   position: fixed;
-  left: 0;
   top: 62px;
+  left: 0;
+  z-index: 2;
+
+  padding: 20px 20px 20px 40px;
   max-width: 250px;
   width: 100%;
   height: 100%;
-  padding: 20px 20px 20px 40px;
+
   background: #fff;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.07);
   transform: translateX(-100%);
@@ -47,7 +50,7 @@ defineProps({
   }
   &__link {
     display: block;
-    padding: 4px 2px;
+    padding: 4px;
     font-weight: bold;
     border-radius: 12px;
     border: 2px solid #fff;

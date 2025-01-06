@@ -42,17 +42,19 @@ function toggleSideBar() {
 
 .sidebar-toggle {
   position: fixed;
-  left: 0;
-  width: 15px;
-  background: var(--primary);
-  height: 100%;
   top: 62px;
-  z-index: 1;
-  cursor: pointer;
-  color: #fff;
+  left: 0;
+  z-index: 3;
+
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 15px;
+  height: 100%;
+
+  background: var(--primary);
+  cursor: pointer;
+  color: #fff;
 }
 
 @media (max-width: 1023px) {
