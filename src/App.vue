@@ -3,7 +3,7 @@ import { ref } from 'vue';
 import LayoutHeader from './components/layout/Header.vue';
 import LayoutSidebar from './components/layout/Sidebar.vue';
 
-const isOpenSideBar = ref(false);
+const isOpenSideBar = ref(true);
 
 function toggleSideBar() {
   isOpenSideBar.value = !isOpenSideBar.value;
@@ -33,7 +33,7 @@ function toggleSideBar() {
 .content {
   max-width: 1400px;
   margin-left: 250px;
-  padding: 30px;
+  padding: 30px 30px 30px 50px;
   transition: 0.2s;
   &.fullopen {
     margin-left: 0;
@@ -49,7 +49,7 @@ function toggleSideBar() {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 15px;
+  width: 20px;
   height: 100%;
 
   background: var(--primary);
