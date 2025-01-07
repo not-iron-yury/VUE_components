@@ -15,6 +15,8 @@ const listOfСolors = ref([
   { name: 'белый', id: '5' },
 ]);
 const selectedColors = ref(['красный']);
+
+const switchResult = ref(false);
 </script>
 
 <template>
@@ -26,30 +28,47 @@ const selectedColors = ref(['красный']);
         <checkbox
           label="checkbox active"
           name="checkboxActive"
-          value="checkboxActive"
+          value=""
           id="checkboxActive"
           v-model:checked="checkboxActive"
         />
       </div>
     </div>
+
     <div class="block">
       <h2 class="heading-2">Disabled</h2>
       <div class="line">
         <checkbox
           label="checkbox active disabled"
           name="checkboxDisabled"
-          value="checkboxDisabled"
+          value=""
           id="checkboxDisabled"
           :disabled="checkboxDisabled"
           v-model:checked="checkboxDisabledChecked"
         />
       </div>
     </div>
+
     <div class="block">
       <h2 class="heading-2">Group</h2>
       <p class="subtitle">Выбранные цвета: {{ String(selectedColors) }}</p>
       <div class="col">
         <checkbox-group v-model:value="selectedColors" name="colors" :listColors="listOfСolors" />
+      </div>
+    </div>
+
+    <div class="block">
+      <h2 class="heading-2">Switch</h2>
+      <div class="col">
+        <p>Тумблер: {{ switchResult ? 'вкл' : 'выкл' }}</p>
+        <checkbox
+          label="Toggle Switch"
+          name="switch"
+          value=""
+          id="switch"
+          type="switch"
+          v-model:checked="switchResult"
+        />
       </div>
     </div>
   </div>
