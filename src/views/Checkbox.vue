@@ -1,5 +1,5 @@
 <script setup>
-import { ref, watch } from 'vue';
+import { ref } from 'vue';
 import Checkbox from '@/components/checkbox/Checkbox.vue';
 import CheckboxGroup from '@/components/checkbox/CheckboxGroup.vue';
 
