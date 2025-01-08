@@ -6,7 +6,7 @@ const props = defineProps({
   },
   percent: {
     type: Number,
-    requared: true,
+    required: true,
   },
   color: {
     type: String,

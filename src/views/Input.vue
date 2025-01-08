@@ -60,79 +60,75 @@ function submitForm() {
 <template>
   <h1 class="heading-1">Inputs + Vuelidate</h1>
   <div class="wrapper">
-    <div class="block">
-      <div class="col">
-        <form @submit.prevent="submitForm">
-          <div class="input-wrapper">
-            <Input
-              id="name"
-              type="text"
-              name="name"
-              label="Ваше имя"
-              placeholder="Введите ваше имя"
-              v-model:value="v$.nameField.$model"
-              :error="v$.nameField.$errors"
-              required
-            />
-          </div>
-          <div class="input-wrapper">
-            <Input
-              id="email"
-              type="email"
-              name="email"
-              label="Ваша почта"
-              placeholder="Введите ваш email"
-              v-model:value="v$.emailField.$model"
-              :error="v$.emailField.$errors"
-              required
-            />
-          </div>
-          <div class="input-wrapper">
-            <Input
-              id="number"
-              type="number"
-              name="number"
-              label="Введите число от 100 до 1000"
-              placeholder="Введите число"
-              v-model:value="v$.numberField.$model"
-              :error="v$.numberField.$errors"
-            />
-          </div>
-          <div class="input-wrapper">
-            <Input
-              id="password"
-              type="password"
-              label="Ваш пароль"
-              name="password"
-              placeholder="Введите пароль"
-              v-model:value="v$.passwordField.$model"
-              :error="v$.passwordField.$errors"
-              required
-            />
-            <Input
-              type="password"
-              name="confirm"
-              placeholder="Повторите пароль"
-              v-model:value="v$.confirmPasswordField.$model"
-              :error="v$.confirmPasswordField.$errors"
-            />
-          </div>
-          <div class="input-wrapper">
-            <Input
-              id="test"
-              type="text"
-              name="test"
-              label="Введите слово 'Йоба'"
-              placeholder="Введите проверочное слово"
-              v-model:value="v$.frontendField.$model"
-              :error="v$.frontendField.$errors"
-              required
-            />
-          </div>
-          <Button label="Отправить" color="primary"></Button>
-        </form>
+    <form @submit.prevent="submitForm">
+      <div class="input-wrapper">
+        <Input
+          id="name"
+          type="text"
+          name="name"
+          label="Ваше имя"
+          placeholder="Введите ваше имя"
+          v-model:value="v$.nameField.$model"
+          :error="v$.nameField.$errors"
+          required
+        />
       </div>
-    </div>
+      <div class="input-wrapper">
+        <Input
+          id="email"
+          type="email"
+          name="email"
+          label="Ваша почта"
+          placeholder="Введите ваш email"
+          v-model:value="v$.emailField.$model"
+          :error="v$.emailField.$errors"
+          required
+        />
+      </div>
+      <div class="input-wrapper">
+        <Input
+          id="number"
+          type="number"
+          name="number"
+          label="Введите число от 100 до 1000"
+          placeholder="Введите число"
+          v-model:value="v$.numberField.$model"
+          :error="v$.numberField.$errors"
+        />
+      </div>
+      <div class="input-wrapper">
+        <Input
+          id="password"
+          type="password"
+          label="Ваш пароль"
+          name="password"
+          placeholder="Введите пароль"
+          v-model:value="v$.passwordField.$model"
+          :error="v$.passwordField.$errors"
+          required
+        />
+        <Input
+          type="password"
+          name="confirm"
+          placeholder="Повторите пароль"
+          v-model:value="v$.confirmPasswordField.$model"
+          :error="v$.confirmPasswordField.$errors"
+        />
+      </div>
+      <div class="input-wrapper">
+        <Input
+          id="test"
+          type="text"
+          name="test"
+          label="Введите слово 'Йоба'"
+          placeholder="Введите проверочное слово"
+          v-model:value="v$.frontendField.$model"
+          :error="v$.frontendField.$errors"
+          required
+        />
+      </div>
+      <Button label="Отправить" color="primary"></Button>
+    </form>
   </div>
 </template>
 

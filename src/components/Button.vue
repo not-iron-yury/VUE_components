@@ -10,15 +10,15 @@ defineProps({
   },
   rounded: {
     type: Boolean,
-    requared: false,
+    required: false,
   },
   transparent: {
     type: Boolean,
-    requared: false,
+    required: false,
   },
   icon: {
     type: String,
-    requared: false,
+    required: false,
   },
   size: {
     type: String,

@@ -4,15 +4,15 @@ import Checkbox from '@/components/checkbox/Checkbox.vue';
 const props = defineProps({
   name: {
     type: String,
-    requared: true,
+    required: true,
   },
   value: {
     type: Array,
-    requared: true,
+    required: true,
   },
   listColors: {
     type: Array,
-    requared: true,
+    required: true,
     validator: value => {
       const hasNameKey = value.every(prop => Object.keys(prop).includes('name'));
       const hasIdKey = value.every(prop => Object.keys(prop).includes('id'));

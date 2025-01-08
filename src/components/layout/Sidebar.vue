@@ -8,6 +8,7 @@ const links = ref([
   { name: 'Radiobutton', href: '/radiobutton' },
   { name: 'Progress Bar', href: '/progress' },
   { name: 'Form inputs', href: '/input' },
+  { name: 'Tabs', href: '/tabs' },
 ]);
 
 defineProps({
