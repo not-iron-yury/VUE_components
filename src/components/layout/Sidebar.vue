@@ -9,6 +9,7 @@ const links = ref([
   { name: 'Progress Bar', href: '/progress' },
   { name: 'Form inputs', href: '/input' },
   { name: 'Tabs', href: '/tabs' },
+  { name: 'Table', href: '/table' },
 ]);
 
 defineProps({
