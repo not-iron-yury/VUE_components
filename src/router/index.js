@@ -1,13 +1,4 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import Index from '@/views/index.vue';
-import Button from '@/views/Button.vue';
-import Typography from '@/views/Typography.vue';
-import Checkbox from '@/views/Checkbox.vue';
-import Radiobutton from '@/views/Radiobutton.vue';
-import Progress from '@/views/Progress.vue';
-import Input from '@/views/Input.vue';
-import Tabs from '@/views/Tabs.vue';
-import Table from '@/views/Table.vue';
 
 const router = createRouter({
   history: createWebHistory(),
@@ -15,47 +6,47 @@ const router = createRouter({
     {
       path: '/',
       name: 'Index',
-      component: Index,
+      component: () => import('@/views/Index.vue'),
     },
     {
       path: '/typography',
       name: 'Typography',
-      component: Typography,
+      component: () => import('@/views/Typography.vue'),
     },
     {
       path: '/button',
       name: 'Button',
-      component: Button,
+      component: () => import('@/views/Button.vue'),
     },
     {
       path: '/checkbox',
       name: 'Checkbox',
-      component: Checkbox,
+      component: () => import('@/views/Checkbox.vue'),
     },
     {
       path: '/radiobutton',
       name: 'Radiobutton',
-      component: Radiobutton,
+      component: () => import('@/views/Radiobutton.vue'),
     },
     {
       path: '/progress',
       name: 'Progress',
-      component: Progress,
+      component: () => import('@/views/Progress.vue'),
     },
     {
       path: '/input',
       name: 'Input',
-      component: Input,
+      component: () => import('@/views/Tabs.vue'),
     },
     {
       path: '/tabs',
       name: 'Tabs',
-      component: Tabs,
+      component: () => import('@/views/Tabs.vue'),
     },
     {
       path: '/table',
       name: 'Table',
-      component: Table,
+      component: () => import('@/views/Table.vue'),
     },
   ],
 });
