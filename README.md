@@ -1,5 +1,26 @@
-# Vue 3 + Vite
+# Несколько компонентов для Vue 3 
+### Описание проекта:
+Переосмысление подхода к написанию UI компонентов после ванильного JavaScript'а.
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+##### Стек:
+- Vue 3
+- Vue Router
+- Vuelidate
+- UI lib Fortawesome
+- Vite
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+
+### Практика (компоненты):
+
+- Buttons
+- Checkbox
+- Checkbox Toggle Switch
+- Radio
+- Input (библиотека Vuelidate)
+- Tabs
+- Table
+
+#### Вывод
+1. Неоднократно слышал, что большие компании создают собственные библиотеки. Теперь понял почему.
+2. Сперва задался целью написать свою библиотеку. Собирая информацию по данной теме узнал, что существуют уже готовые решения (как внезапно, кто бы мог подумать). Поэтому отложил идею на потом.
+3. Декларативность, удобство переиспользования и гибкость компонентов, безусловно великая штука. Особенно после ~~пердолигна~~ создания переиспользуемых компонентов на ванильном JS.
